@@ -11,5 +11,5 @@ const options = {
   },
 };
 
-const flatpickr(..., options)
+// const flatpickr(..., options)
 // s
