@@ -1,0 +1,76 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: block;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 100vh; */
+  /* margin: 0; */
+}
+
+.timer {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.calendar {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.field {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.value {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 20px;
+  color: #888;
+}
+
+#datetime-picker {
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+[data-start] {
+  padding: 26px;
+  font-size: 20px;
+  background-color: #14a519;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-reset] {
+  padding: 26px;
+  font-size: 20px;
+  background-color: rgb(201, 4, 4);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-start]:disabled {
+  background-color: rgb(151, 151, 151);
+  cursor: not-allowed;
+}
+
+[data-reset]:disabled {
+  background-color: rgb(151, 151, 151);
+  cursor: not-allowed;
+}
