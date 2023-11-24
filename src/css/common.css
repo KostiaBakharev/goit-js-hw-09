@@ -7,7 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #aeacac;
+  background-color: #d5d2d2;
   color: #212121;
   line-height: 1.5;
 }
@@ -18,5 +18,13 @@ img {
 }
 
 a {
+  color: rgb(37, 3, 132);
+  font-size: 26px;
+  font-weight: 600;
   text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }

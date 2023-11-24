@@ -26,6 +26,9 @@ function startGeneration() {
       document.body.style.backgroundColor = getRandomHexColor();
       console.log(`Background color changed to: ${getRandomHexColor()}`);
     }, 1000);
+    if (colorChange) {
+      document.querySelector('.wrap').style.backgroundColor = 'inherit';
+    }
   }
 }
 
