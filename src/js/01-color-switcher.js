@@ -13,22 +13,17 @@ const btnStop = document
   .querySelector('[data-stop]')
   .addEventListener('click', stopGenetation);
 
+document.querySelector('[data-stop]').disabled = true;
 let colorChange;
 
 function startGeneration() {
+  document.querySelector('[data-start]').disabled = true;
+  document.querySelector('[data-stop]').disabled = false;
   if (!colorChange) {
-    // btnStart.disabled = true;
-    // btnStop.disabled = false;
-    document.querySelector('[data-start]').disabled = true;
-    document.querySelector('[data-stop]').disabled = false;
-
     colorChange = setInterval(() => {
       document.body.style.backgroundColor = getRandomHexColor();
       console.log(`Background color changed to: ${getRandomHexColor()}`);
     }, 1000);
-    if (colorChange) {
-      document.querySelector('.wrap').style.backgroundColor = 'inherit';
-    }
   }
 }
 
@@ -39,8 +34,6 @@ function stopGenetation() {
     document.querySelector('[data-start]').disabled = false;
     document.querySelector('[data-stop]').disabled = true;
     console.log('Color generation stopped.');
-    // btnStart.disabled = false;
-    // btnStop.disabled = true;
   }
 }
 
